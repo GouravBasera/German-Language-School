@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import TopTicker from "./components/ScrollingStrip";
 import Hero from "./components/Hero";
@@ -18,43 +19,51 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import WhyWeCreated from "./components/WhyWeCreated";
 import BottomStrip from "./components/BottomStrip";
 import LogoStrip from "./components/LogoStrip";
+import ThankYou from "./components/ThankYou"; // ⬅️ Add this
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <TopTicker />
+    <BrowserRouter>
+      <Routes>
 
+        {/* 🎉 THANK YOU PAGE ROUTE */}
+        <Route path="/thankyou" element={<ThankYou />} />
 
+        {/* ⭐ MAIN WEBSITE ROUTE */}
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen">
+              <TopTicker />
+              <LogoStrip />
 
+              <header className="relative">
+                <Hero />
+              </header>
 
-      <LogoStrip />
+              <TeamSection />
 
-      <header className="relative">
-        <Hero />
-      </header>
+              <main className="space-y-24">
+                <HeroSection />
+                <FeaturesSection />
+                <InfoStrip />
+                <WebinarPerfectFor />
+                <InsideWebinar />
+                <StarterKit />
+                <TestimonialsSection />
+                <WhyWeCreated />
+                <HowItWorks />
+                <FAQ />
+                <CTA />
+              </main>
 
-      <TeamSection />
+              <BottomStrip />
+              <Footer />
+            </div>
+          }
+        />
 
-
-
-
-
-      <main className="space-y-24">
-        <HeroSection />
-        <FeaturesSection />
-        <InfoStrip />
-        <WebinarPerfectFor />
-        <InsideWebinar />
-        <StarterKit />
-        <TestimonialsSection />
-        <WhyWeCreated />
-        <HowItWorks />
-        <FAQ />
-        <CTA />
-      </main>
-
-      <BottomStrip />
-      <Footer />
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
