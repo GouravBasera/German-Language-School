@@ -1,6 +1,7 @@
 .hero-top-sect{
   width: 75vw;
   margin: 0 auto;
+      max-width: 1200px;
 }
 
 /* ------------------------ */

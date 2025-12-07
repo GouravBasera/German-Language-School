@@ -8,6 +8,7 @@
 
   padding: 60px 0;       /* Remove sideways padding so 70vw is accurate */
   gap: 40px;
+      max-width: 1200px;
 }
 
 .hero-content {
