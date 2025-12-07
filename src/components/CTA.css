@@ -26,7 +26,7 @@
   font-weight: 400;
   line-height: 27px;
   color: #555;
-  line-height: 1.6;
+  line-height: 27px;
 }
 
 
@@ -35,10 +35,11 @@
   background: #eaf3ff;
   padding: 22px 32px;
   width: fit-content;
-  border-radius: 22px;
-  font-size: 20px;
+  border-radius: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #6346FA;
+  line-height: 21px;
 
   /* 🔥 Perfect bottom curved purple shadow */
   box-shadow: inset 0px -8px 0px 0px rgba(98, 73, 255, 0.6);

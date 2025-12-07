@@ -1,33 +1,39 @@
 /* WRAPPER */
 .how-wrapper {
-  padding: 80px 0;
+  padding: 80px 0px;
   display: flex;
   justify-content: center;
+
 }
 
 .how-container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
+    width: 75vw;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 
 /* LEFT IMAGE */
 .how-left {
-  flex: 1;
+    flex: 1;
+  display: flex;
+  justify-content: flex-start;
+ 
 }
 
 .how-img {
   width: 100%;
-  border-radius: 20px;
+  max-width: 470px;         /* smaller like screenshot */
+  border-radius: 18px;
   object-fit: cover;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08); /* soft shadow behind image */
 }
 
 /* RIGHT SECTION */
 .how-right {
-  flex: 1;
+    flex: 1 1;
+    max-width: 520px;
 }
 
 .how-title {
@@ -50,21 +56,14 @@
 .how-box {
   background: #f4f8ff;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 16px;
   position: relative;
-  border-bottom: 6px solid transparent;
+  /* 🔥 Perfect bottom curved purple shadow */
+  box-shadow: inset 0px -4px 0px rgba(98, 73, 255, 0.6);
+
 }
 
-.how-box::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 6px;
-  width: 100%;
-  border-radius: 0 0 20px 20px;
-  background: linear-gradient(90deg, #7d5cff, #5ecbff);
-}
+
 
 /* TIMELINE */
 .step-row {
@@ -111,7 +110,7 @@
 /* TEXT */
 .step-title {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
   color: #888;
   margin-bottom: 3px;
@@ -131,7 +130,7 @@
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
 }
 

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  width: 80vw;           /* TOTAL width = 70% of viewport */
+  width: 75vw;           /* TOTAL width = 70% of viewport */
   margin: 0 auto;        /* CENTER horizontally */
 
   padding: 60px 0;       /* Remove sideways padding so 70vw is accurate */

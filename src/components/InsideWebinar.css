@@ -1,12 +1,13 @@
 /* UNIQUE CLASSNAMES — will not conflict with any existing design */
 
 .wb_container {
-  max-width: 1200px;
+
   margin: 0 auto;
   padding: 60px 20px;
   display: flex;
   align-items: center;
   gap: 60px;
+  width: 75vw;
 }
 
 .wb_left {
