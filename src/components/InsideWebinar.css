@@ -67,13 +67,11 @@
 /* Responsive */
 @media (max-width: 900px) {
   .wb_container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
-  .wb_list_item {
-    justify-content: center;
-  }
+
 }
 
 

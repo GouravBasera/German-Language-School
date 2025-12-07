@@ -35,11 +35,10 @@
   padding: 28px 22px;
   border-radius: 18px;
   width: 200px;       /* FIXED width like screenshot */
-  min-height: 120px;  /* Same height for all boxes */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: space-evenly;
   text-align: center;
   position: relative;
   box-shadow: 
