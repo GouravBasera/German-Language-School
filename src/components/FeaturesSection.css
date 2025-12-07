@@ -77,3 +77,52 @@
 .bottom-row {
   margin-top: 25px;
 }
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .features-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 180px;      /* slightly smaller for tablets */
+    padding: 24px 18px;
+  }
+
+  .features-title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .features-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .feature-card {
+    width: 70vw;         /* 2 cards per row on mobile */
+    min-height: 120px;
+    padding: 22px 16px;
+  }
+
+  .features-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .price-text {
+    font-size: 14px;
+  }
+
+  .bonus-tag {
+    top: 20px;          /* adjust for smaller box */
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+}

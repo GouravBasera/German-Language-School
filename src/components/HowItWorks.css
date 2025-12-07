@@ -143,3 +143,92 @@
   line-height: 21px;
   color: #333;
 }
+
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .how-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .how-right,
+  .how-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .how-title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .how-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .how-box {
+    padding: 18px;
+  }
+}
+
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .how-wrapper {
+    padding: 50px 0;
+  }
+
+  .how-container {
+    gap: 30px;
+    text-align: left;  /* looks cleaner on mobile */
+  }
+
+  .how-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .how-subtitle {
+    font-size: 15px;
+  }
+
+  .how-box {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .step-row {
+    gap: 14px;
+  }
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-width: 4px;
+  }
+
+  .timeline-dot.active::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .timeline-line {
+    height: 35px;
+    margin-left: 6px;
+  }
+
+  .step-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .bottom-text {
+    font-size: 13px;
+    margin-top: 22px;
+  }
+}
+
+

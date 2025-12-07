@@ -1,56 +1,47 @@
 .hero-top-sect{
-
   width: 80vw;
-  margin: 00 auto;
+  margin: 0 auto;
 }
 
+/* ------------------------ */
+/* HERO TEXT SECTION */
+/* ------------------------ */
 
 .main-color-sit{
-
   color: #6c63ff;
 }
 
 .hero-top-head {
-    color: #242325;
-    text-align: center;
-
-    /* H1 / Bold */
-    font-family: "Raveo";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px;
-    /* 125% */
-
+  color: #242325;
+  text-align: center;
+  font-family: "Raveo";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
 }
 
 .block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .block-hro-lvl-blk {
-
-    display: inline-block;
-    margin: 00 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
-
 
 .hero-top-txt {
-
-    color: #47464A;
-    text-align: center;
-
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-    width: 80%;
-    margin: 20px auto;
-    /* 150% */
+  color: #47464A;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 80%;
+  margin: 20px auto;
 }
 
-
+/* ------------------------ */
+/* WEBINAR SECTION */
+/* ------------------------ */
 
 .webinar-section-top {
   display: flex;
@@ -61,7 +52,6 @@
   flex-wrap: wrap;
 }
 
-/* LEFT BOX */
 .info-box {
   background: #eaf1ff;
   padding: 30px;
@@ -84,7 +74,6 @@
   gap: 20px;
 }
 
-/* FEATURE ITEMS */
 .features {
   display: flex;
   gap: 40px;
@@ -113,7 +102,7 @@
   height: 24px;
 }
 
-/* CTA BUTTON */
+/* CTA */
 .cta-btn {
   background: #6350ff;
   color: white;
@@ -136,10 +125,90 @@
   background: #5440e6;
 }
 
-/* RESPONSIVE */
+/* ------------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------------ */
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .hero-top-head {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .hero-top-txt {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .features {
+    gap: 20px;
+  }
+}
+
+/* Mobile - 768px */
 @media (max-width: 768px) {
   .webinar-section-top {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+
+  .right-content {
+    width: 100%;
+  }
+
+  .hero-top-head {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero-top-txt {
+    width: 95%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+}
+
+/* Small Mobile - 480px */
+@media (max-width: 480px) {
+  .hero-top-head {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .block-hro-lvl-blk {
+    margin: 0 5px;
+  }
+
+  .hero-top-txt {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item h4 {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+
+  .webinar-section-top{
+
+    padding: 20px 10px;
   }
 }

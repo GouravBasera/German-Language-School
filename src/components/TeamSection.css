@@ -52,3 +52,33 @@
   margin-bottom: -20px !important; /* pull image upward */
   object-position: bottom center !important;
 }
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .team-card {
+    width: 28vw;
+  }
+  .team-card-top {
+    height: 220px;
+  }
+  .team-photo {
+    height: 200px;
+  }
+}
+
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .team-card {
+    width: 42vw;
+  }
+  .team-card-top {
+    height: 200px;
+  }
+  .team-photo {
+    height: 180px;
+  }
+  .team-name {
+    font-size: 1rem;
+  }
+}
