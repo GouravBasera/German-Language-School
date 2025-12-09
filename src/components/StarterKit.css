@@ -80,6 +80,9 @@
   padding: 30px;
   border-radius: 16px;
   text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .starter-total-box h3 {
