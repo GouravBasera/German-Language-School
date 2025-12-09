@@ -155,7 +155,7 @@
   /* Price section mobile look */
   .bs-price-section {
     align-items: center;
-    gap: 2px;
+    gap: .5rem;
   }
 
   .bs-price-big {
